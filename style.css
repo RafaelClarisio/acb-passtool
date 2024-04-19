@@ -1,0 +1,204 @@
+body { 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+        
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 5%;
+    width: 40%;
+    border-radius: 16px 16px 0px 0px;
+    }
+    
+    .div1 { 
+        grid-area: 1 / 1 / 2 / 2;
+        background: #A7892F;
+        border-radius: 16px 0px 0px 0px;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #172C54;
+     }
+     .div1:hover {
+        background: #d4ae39;
+        cursor: pointer;
+        color: white;
+     }
+
+    .div2 { 
+        grid-area: 1 / 2 / 2 / 3; 
+        background: #A7892F;
+        border-radius: 0px 16px 0px 0px;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: #172C54;
+    }
+    .div2:hover {
+        background: #d4ae39;
+        cursor: pointer;
+        color: white;
+     }
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #172C54;
+    color: white;
+    width: 40%;
+    height: 30%;
+    justify-content: space-between;
+    padding-top: 1%;
+    align-items: center;
+    border-radius: 0px 0px 16px 16px;
+}
+.section-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-between;
+    padding-top: 2%;
+    align-items: center;
+}
+
+.container label {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+.container input {
+    width: 80%;
+    height: 15%;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+.power-container {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.power-point {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    height: 20px; /* Altura mínima desejada */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo com transparência */
+    border-radius: 4px; /* Adicione borda arredondada, se desejar */
+    overflow: hidden;
+    color: #172c5400;
+}
+
+.section-2 {
+    display: none;
+    width: 100%;
+    height: 90%;
+    flex-direction: column;
+    color: white;
+    gap: 2%;
+    align-items: center;
+}
+
+.section-2 input {
+    width: 80%;
+    height: 15%;
+    border-radius: 8px;
+    border: none;
+    text-align: center;
+}
+
+.section-2 button {
+    font-size: 16px;
+    color: #fff;
+    background-color: #172c54;
+    padding: 2% 8%;
+    border: none;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 14px;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    border:solid #0066cc 2px
+}
+
+.section-2 button:hover {
+    transition : 1000ms;
+    padding: 2% 8%;
+    transform : translateY(-0px);
+    background-color: #264e96;
+    color: #ffffff;
+    border: none;
+    border:solid #172c54 2px
+}
+
+.section-2 select {
+    appearance: none;
+	-webkit-appearance: none;
+	width: 80%;
+	font-size: 18px;
+	padding: 5px 10px 5px 10px;
+	background-color: #FFFFFF;
+	border: 1px solid #C4D1EB;
+	border-radius: 5px;
+	color: #000000;
+	cursor: pointer;
+	outline: none;
+	box-shadow: 3px 3px 2px 0px #E2E2E2;
+    text-align: center;
+}
+
+.section-2 select:focus {
+    background: #F2F2F2;
+	border: 1px solid #5A7EC7;
+	border-radius: 5px;
+}
+
+.section-2 select::after {
+    content: "";
+	position: absolute;
+	pointer-events: none;
+	top: 50%;
+	right: 10px;
+	transform: translate(0, -50%);
+	width: 12px;
+	height: 12px;
+	background-color: #000000;
+	clip-path: polygon(8% 17%, 0% 25%, 50% 84%, 100% 25%, 92% 17%, 50% 65%);
+}
