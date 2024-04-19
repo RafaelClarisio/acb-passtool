@@ -51,12 +51,12 @@ document.addEventListener("DOMContentLoaded", function() {
                 /[a-z]/, 
                 /[A-Z]/, 
                 /[^0-9a-zA-Z]/,
-                /(123|234|345|456|567|678|789|890|Teste|teste|test|temp|alterar)/ // Verifica se há números consecutivos
+                /(123|234|345|456|567|678|789|890|Teste|teste|test|temp|alterar|Appian@2022|Appian@2023|Appian@2024|321|654|987|Appian)/ // Verifica se há números consecutivos
             ];
             arrayTest.forEach((item, index) => {
                 if (item.test(value)) {
                     if (index === arrayTest.length - 1) {
-                        point -= 3; // Penaliza números consecutivos
+                        point -= 4; // Penaliza números consecutivos
                     } else {
                         point += 1; // Adiciona ponto para outras condições
                     }
