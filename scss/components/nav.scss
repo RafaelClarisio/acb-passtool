@@ -1,0 +1,50 @@
+@use '../abstract/var';
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 5%;
+    width: 40%;
+    border-radius: 16px 16px 0px 0px;
+    .div1 {
+        grid-area: 1 / 1 / 2 / 2;
+        background: var.$bg-emphasis;
+        border-radius: 16px 0px 0px 0px;
+        transition: 0.3s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        color: var.$fc-light;
+        &:hover {
+            background: var.$bg-emphasis-focus;
+            cursor: pointer;
+            color: white;
+        }
+    }
+        .div2 {
+            grid-area: 1 / 2 / 2 / 3; 
+            background: var.$bg-emphasis;
+            border-radius: 0px 16px 0px 0px;
+            transition: 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Krona One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            color: var.$fc-light;
+            &:hover {
+                background: var.$bg-emphasis-focus;
+                cursor: pointer;
+                color: white;
+            }
+        }
+    }

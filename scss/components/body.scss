@@ -1,0 +1,18 @@
+@use '../abstract/var';
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+}

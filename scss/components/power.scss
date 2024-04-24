@@ -1,0 +1,18 @@
+.power-point {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    height: 20px; /* Altura mínima desejada */
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo com transparência */
+    border-radius: 4px; /* Adicione borda arredondada, se desejar */
+    overflow: hidden;
+    color: #172c5400;
+    transition: .5s;
+}
+.power-container {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}

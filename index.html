@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACB - Password Tool</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="./assets/favicon.png" type="image/png">
+</head>
+<body>
+    <main>
+
+        <img src="./assets/logo.png" alt="Appian Capital Brazil" width="20%">
+
+        <div class="parent">
+            <div class="div1"> Password Test</div>
+            <div class="div2"> Password Generator</div>
+            </div>
+
+        <div class="container">
+            <section class="section-1">
+            <label for="">Password Strenght checker</label>
+
+            <input type="password" name="Check" id="password" placeholder="Digite sua senha" autocomplete="off">
+            <label for=""> Strenght of Password</label>
+
+            <div class="power-container">
+                <div class="power-point" id="power-point"></div>
+            </div>
+        </section>
+            <section class="section-2">
+                <h1>Gerador de Senhas</h1>
+                <label for="tamanho">Selecione o tamanho da senha:</label>
+                <select id="tamanho">
+                  <option value="8">8</option>
+                  <option value="16">16</option>
+                  <option value="24">24</option>
+                  <option value="32">32</option>
+                </select>
+                <br>
+                <button id="gerar">Gerar Senha</button>
+                <br>
+                <label for="senha">Senha Gerada:</label>
+                <input type="text" id="senha" readonly>
+            </section>
+        </div>
+
+        </div>
+
+    </main>
+    <script src="./src/js/keycheck.js"></script>
+    <script src="./src/js/keygen.js"></script>
+    <script src="./src/js/nav.js"></script>
+</body>
+</html>

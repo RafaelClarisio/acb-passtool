@@ -1,0 +1,28 @@
+@use '../abstract/var';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var.$bg-dark;
+    color: var.$fc-dark;
+    width: 40%;
+    height: 40%;
+    justify-content: space-between;
+    padding-top: 1%;
+    align-items: center;
+    border-radius: 0px 0px 16px 16px;
+    label {
+        font-family: "Krona One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 24px;
+    }
+    
+    input {
+        width: 80%;
+        height: 15%;
+        border-radius: 8px;
+        border: none;
+        text-align: center;
+    }
+}
