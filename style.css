@@ -110,9 +110,10 @@ body main {
   justify-content: center;
 }
 
-.chk1 .chk2 .chk3 .chk4 .chk5 .chk6 .chk7 {
+.chk1, .chk2, .chk3, .chk4, .chk5, .chk6, .chk7 {
   display: none;
-  font-size: 8px;
+  font-size: 16px;
+  color: rgb(190, 16, 16);
 }
 
 .section-1 {
