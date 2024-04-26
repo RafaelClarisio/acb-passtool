@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             let widthPower = ["1%", "25%", "50%", "75%", "100%"];
             let colorPower = ["#D73F40", "#DC6551", "#F2B84F", "#BDE952", "#3ba62f"];
             chk1.style.display = "none";
-            chk2.style.display = "none";
+            chk2.style.display = "block";
             chk3.style.display = "none";
             chk4.style.display = "none";
             chk5.style.display = "none";
