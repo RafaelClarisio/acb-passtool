@@ -213,4 +213,15 @@ body main {
   clip-path: polygon(8% 17%, 0% 25%, 50% 84%, 100% 25%, 92% 17%, 50% 65%);
 }
 
+.ass {
+  font-family: "Krona One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /*# sourceMappingURL=style.css.map */
