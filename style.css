@@ -110,6 +110,10 @@ body main {
   justify-content: center;
 }
 
+.chk1 .chk2 .chk3 .chk4 .chk5 .chk6 .chk7 {
+  display: none;
+}
+
 .section-1 {
   width: 100%;
   height: 100%;
